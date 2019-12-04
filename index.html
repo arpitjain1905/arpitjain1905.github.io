@@ -22,7 +22,7 @@ body {
 </head>
 <body >
 <!-- Step 4: Define your flying images. For each image's ID tag, use the same variable names as 1) above -->
-     
+ <section id="media"></section>    
 <DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:20; height:20;">
 <IMG SRC="heart.gif" height = 200px; BORDER=0>
 </DIV>
@@ -143,6 +143,14 @@ movechip("flyimage6");
 movechip("flyimage7");
 movechip("flyimage8");
 }
+var audio = document.createElement('audio');
+var source = document.createElement('source');
+var media = document.getElementById('media');
+media.appendChild(audio);
+audio.appendChild(source);
+source.setAttribute('src', 'https://s21.aconvert.com/convert/p3r68-cdx67/voea4-v1446.mp3');
+source.setAttribute('type', 'audio/mpeg');
+audio.setAttribute('controls', 'controls');
 
 if (window.addEventListener)
 window.addEventListener("load", pagestart, false)
