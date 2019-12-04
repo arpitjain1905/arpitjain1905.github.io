@@ -1,11 +1,13 @@
+<!DOCTYPE html>
 <html>
 	<head>
-	 <link rel="stylesheet" href="materialize.min.css" type="text/css">
-	<style>
- <!-- Compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-
-	</style>
+	 <!-- <link rel="stylesheet" href="materialize.min.css" type="text/css"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
 	
     <!-- Compiled and minified JavaScript -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
@@ -14,10 +16,20 @@
 	<script type="text/javascript" src="materialize.min.js"> </script>
 
 <script type="text/javascript">
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
-  });
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
 
 //Step 1: Define unique variable names depending on number of flying images (ie:3):
 var flyimage1, flyimage2, flyimage3,flyimage4,flyimage5,flyimage6,flyimage7,flyimage8;
@@ -63,14 +75,7 @@ window.onload=pagestart
 	<body >
 	<!-- Step 4: Define your flying images. For each image's ID tag, use the same variable names as 1) above -->
 
-  <div class="carousel">
-    <a class="carousel-item" href="#one!"><img src="5.jpg"></a>
-    <a class="carousel-item" href="#two!"><img src="5.jpg"></a>
-    <a class="carousel-item" href="#three!"><img src="5.jpg"></a>
-    <a class="carousel-item" href="#four!"><img src="5.jpg"></a>
-    <a class="carousel-item" href="#five!"><img src="5.jpg"></a>
-  </div>
-      
+     
 <DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:20; height:20;">
 <IMG SRC="heart.gif" height = 200px; BORDER=0>
 </DIV>
@@ -128,8 +133,12 @@ With joy you make me whirl<br><br>
 Hello my lovely wife<br>
 Around you, revolves my life<br><br>
 Happy birthday !! 
-<img border="0" src="8.jpg" alt="Have patience.. ur picture is loading soon :P" align="center" width="400" height="400">
-
+<!-- <img border="0" src="8.jpg" alt="Have patience.. ur picture is loading soon :P" align="center" width="400" height="400"> -->
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="1.jpg" style="width:100%">
+  <img class="mySlides" src="2.jpg" style="width:100%">
+  <img class="mySlides" src="3.jpg" style="width:100%">
+</div>
 <br><br>
 You are more than just my wife,<br>
 You are a friend in need<br><br>
