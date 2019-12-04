@@ -15,56 +15,7 @@
 	<script type="text/javascript" src="moveobj.js"> </script>
 	<script type="text/javascript" src="materialize.min.js"> </script>
 
-<script type="text/javascript">
-var myIndex = 0;
-carousel();
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-}
-
-//Step 1: Define unique variable names depending on number of flying images (ie:3):
-var flyimage1, flyimage2, flyimage3,flyimage4,flyimage5,flyimage6,flyimage7,flyimage8;
-
-function pagestart(){
-//Step 2: Using the same variable names as 1), add or delete more of the below lines (60=width, height=80 of image):
- flyimage1=new Chip("flyimage1",1,2);
- flyimage2=new Chip("flyimage2",30,30);
- flyimage3=new Chip("flyimage3",20,30);
- flyimage4=new Chip("flyimage4",10,20);
- flyimage5=new Chip("flyimage5",20,40);
- flyimage6=new Chip("flyimage6",20,40);
- flyimage7=new Chip("flyimage7",20,40);
- flyimage8=new Chip("flyimage8",20,40);
-
-
- //Step 3: Using the same variable names as 1), add or delete more of the below lines:
-movechip("flyimage1");
-movechip("flyimage2");
-movechip("flyimage3");
-movechip("flyimage4");
-movechip("flyimage5");
-movechip("flyimage6");
-movechip("flyimage7");
-movechip("flyimage8");
-}
-
-if (window.addEventListener)
-window.addEventListener("load", pagestart, false)
-else if (window.attachEvent)
-window.attachEvent("onload", pagestart)
-else if (document.getElementById)
-window.onload=pagestart
-
-</script>
 		<title>Happy Birthday!!!</title>
 		<audio autoplay hidden loop preload="auto">
  		 <!-- <source src="https://rawgit.com/kanikaluthra14/kanikaluthra14.github.io/master/Congratulations.mp3" type="audio/mp3" > -->
@@ -152,6 +103,55 @@ In my life would be amiss<br><br>
 Happy birthday!!
 </b></i>
 </DIV>
+<script type="text/javascript">
+var myIndex = 0;
+carousel();
 
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+//Step 1: Define unique variable names depending on number of flying images (ie:3):
+var flyimage1, flyimage2, flyimage3,flyimage4,flyimage5,flyimage6,flyimage7,flyimage8;
+
+function pagestart(){
+//Step 2: Using the same variable names as 1), add or delete more of the below lines (60=width, height=80 of image):
+ flyimage1=new Chip("flyimage1",1,2);
+ flyimage2=new Chip("flyimage2",30,30);
+ flyimage3=new Chip("flyimage3",20,30);
+ flyimage4=new Chip("flyimage4",10,20);
+ flyimage5=new Chip("flyimage5",20,40);
+ flyimage6=new Chip("flyimage6",20,40);
+ flyimage7=new Chip("flyimage7",20,40);
+ flyimage8=new Chip("flyimage8",20,40);
+
+
+ //Step 3: Using the same variable names as 1), add or delete more of the below lines:
+movechip("flyimage1");
+movechip("flyimage2");
+movechip("flyimage3");
+movechip("flyimage4");
+movechip("flyimage5");
+movechip("flyimage6");
+movechip("flyimage7");
+movechip("flyimage8");
+}
+
+if (window.addEventListener)
+window.addEventListener("load", pagestart, false)
+else if (window.attachEvent)
+window.attachEvent("onload", pagestart)
+else if (document.getElementById)
+window.onload=pagestart
+
+</script>
 </body>
 </html>
