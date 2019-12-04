@@ -1,6 +1,7 @@
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=no"> -->
+	<meta name="viewport" content="width=1024">
 	<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
@@ -167,12 +168,7 @@ else if (window.attachEvent)
 window.attachEvent("onload", pagestart)
 else if (document.getElementById)
 window.onload=pagestart
-var viewMode = getCookie("view-mode");
-if(viewMode == "desktop"){
-    viewport.setAttribute('content', 'width=1024');
-}else if (viewMode == "mobile"){
-    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
-}
+
 </script>
 </body>
 </html>
