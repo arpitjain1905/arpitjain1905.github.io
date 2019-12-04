@@ -70,15 +70,15 @@ body {
 
 <DIV ID="poem1" align="center" style="color:#ff0000; margin-left:33% ; margin-right:33%; background-color:pink">
 <i><b>
-Hello beautiful, <br>
-You make life bountiful<br><br>
+Hello beautiful!!, <br>
+You make my life bountiful<br><br>
 Hello pretty baby <br>
 You make my life happy<br><br>
 Hello you sexy girl<br>
 With joy you make me whirl<br><br>
 Hello my lovely wife<br>
 Around you, revolves my life<br><br>
-Happy birthday !! 
+Happy birthday Darling !! 
 <!-- <img border="0" src="8.jpg" alt="Have patience.. ur picture is loading soon :P" align="center" width="400" height="400"> -->
 <div class="w3-content w3-section" style="max-width:500px">
   <img class="mySlides" src="1.jpg" alt="Have patience.. ur picture is loading soon :P" align="center" width="400" height="400" style="width:100%">
@@ -104,7 +104,7 @@ You are the source of pure bliss<br><br>
 Without you everything,<br>
 In my life would be amiss<br><br>
 
-Happy birthday!!
+Happy birthday my love!!
 </b></i>
 </DIV>
 <script type="text/javascript">
@@ -167,7 +167,12 @@ else if (window.attachEvent)
 window.attachEvent("onload", pagestart)
 else if (document.getElementById)
 window.onload=pagestart
-
+var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
 </script>
 </body>
 </html>
