@@ -22,7 +22,7 @@ body {
 </head>
 <body >
 <!-- Step 4: Define your flying images. For each image's ID tag, use the same variable names as 1) above -->
- <section id="media"></section>    
+ 
 <DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:20; height:20;">
 <IMG SRC="heart.gif" height = 200px; BORDER=0>
 </DIV>
@@ -89,6 +89,7 @@ Happy birthday !!
   <img class="mySlides" src="10.jpg" alt="Have patience.. ur picture is loading soon :P" align="center" width="400" height="400"style="width:100%">
   <img class="mySlides" src="11.jpg" alt="Have patience.. ur picture is loading soon :P" align="center" width="400" height="400"style="width:100%">
 </div>
+ <section id="media"></section>   
 <br><br>
 You are more than just my wife,<br>
 You are a friend in need<br><br>
@@ -149,7 +150,7 @@ var media = document.getElementById('media');
 media.appendChild(audio);
 audio.appendChild(source);
 audio.autoplay= true;
-audio.hidden=true;
+
 audio.preload="auto";
 audio.loop= true;
 source.setAttribute('src', 'https://s21.aconvert.com/convert/p3r68-cdx67/voea4-v1446.mp3');
